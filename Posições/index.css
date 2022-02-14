@@ -1,0 +1,7 @@
+.box {
+    height: 300px;
+    width: 400px;
+    background-image: url("./img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center 50px;
+}
