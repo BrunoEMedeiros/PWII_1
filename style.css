@@ -1,0 +1,90 @@
+.container {
+    background-color: #ccc;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    /*
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    valor padrao para o direction é row*/
+    flex-wrap: nowrap;
+    /*flex-wrap: wrap-reverse;
+    flex-wrap: nowrap;
+    controla a quebra de linha
+    o valor padrão é nowrap*/
+    /*flex-flow: row wrap-reverse;
+    propriedade usada para resumir os itens flex-wrap e flex-direction*/
+    justify-content: flex-start;
+    /*justify-content: flex-end;
+      justify-content: space-around;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      justify-content: center;
+      alinhamento horizontal dos itens*/
+    align-items: stretch;
+    /*
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    responsavel por fazer o alinhamento vertical*/
+    align-content: flex-start;
+    /*
+    align-content: stretch;
+    usado para alinhamento vertical quando os itens estiverem em quebra, ou seja, multiline*/
+}
+
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    flex-grow: 0;
+    /*
+    Altera a largura dos itens
+    */
+    flex-basis: 20px;
+    /*
+    Altera a largura inicial dos itens
+    */
+    flex-shrink: 1;
+    /*
+    Altera a capacidade de redução do item
+    */
+}
+
+.article-01 {
+    /*
+    Altar a ordem geral dos itens dentro do flex container
+     order: 3;
+    */
+    flex-grow: 3;
+}
+
+.article-02 {
+    /*
+    Altar a ordem geral dos itens dentro do flex container
+     order: 4;
+    */
+    /*
+    align-self: center;
+    Se o flex direction for row, o alinhamento sera vertical. Se for column sera horizontal
+    */
+}
+
+.article-03 {
+    /*
+    Altar a ordem geral dos itens dentro do flex container
+     order: 2;
+    */
+}
+
+.article-04 {
+    /*
+    Altar a ordem geral dos itens dentro do flex container
+     order: 1;
+    */
+}

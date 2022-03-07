@@ -1,0 +1,45 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: aquamarine;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: column wrap;*/
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item {
+    font-size: 40px;
+    height: 50px;
+    flex-grow: 1;
+    flex-basis: 20px;
+    flex-shrink: 2;
+}
+
+.article-01 {
+    background-color: green;
+    flex-grow: 3;
+    order: 4;
+}
+
+.article-02 {
+    background-color: yellow;
+    order: 3;
+}
+
+.article-03 {
+    background-color: blue;
+    order: 1;
+}
+
+.article-04 {
+    background-color: violet;
+    order: 2;
+}
