@@ -8,35 +8,63 @@
     <title>Testes em Javascript</title>
 </head>
 
-<body>
+<body onload="checkCookies()">
+    <script>
+        function checkCookies() {
+            if (navigator.cookieEnabled == true) {
+                alert("Cookies são permitidos")
+            } else {
+                alert("Cookies não são permitidos")
+            }
+        }
+    </script>
+    <h1>Ola mundo!</h1>
+    <p>Testando codigos</p>
+    <h1 onclick="this.innerHTML='Isso acontece quando usamos o evento onClick!'">Clique nesse link para testar o evento onClick!
+    </h1>
+    <div id="msg">clique me mim</div>
+    <script>
+        /*
+                                                                                //Operadores js
+                                                                                //Aritméticos
+                                                                                +: soma
+                                                                                - : subtração 
+                                                                                * : multiplicação 
+                                                                                / : divisão inteira 
+                                                                                % : resto da divisão inteira 
+                                                                                ** : potencia
 
+                                                                                //logicos
+                                                                                    < : menor que 
+                                                                                    <= : menor ou igual 
+                                                                                    > : maior que 
+                                                                                    >= : maior ou igual 
+                                                                                    === : igualdade restrita
+                                                                                    ! : negação
+                                                                                    && : e
+                                                                                    || : ou
+                                                                                    == : comparação
+
+                                                                                //Atribuições
+                                                                                    =: atribuição 
+                                                                                
+                                                                                    function sum(x, y){
+                    return x + y;
+                }function createProfile(){
+                    
+                    function isValid(){ //definindo uma função dentro de outra função
+                        return 'valid!!'
+                    }}
+                                                                                
+                                                                                    */
+
+        var p = document.getElementsByTagName('p')[0]
+
+        window.document.write('Esta escrito assim: ' + p.innerHTML)
+
+        var d = document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+    </script>
 </body>
-<h1>Ola mundo!</h1>
-<p>Testando codigos</p>
-<script>
-    /*
-                            window.alert('Meu primeiro alerta')
-                            //Abreviado
-                            alert('Mensagem abreviada')
-                            window.confirm('Esta entendo cursos ?')
-                            //window.prompt('Escreva seu nome?')
-                            */
-
-    //var nome = window.prompt('Insira seu nome: ')
-    //alert('Seu nome é: ' + nome)
-    //let numero1 = window.prompt('Valor 1: ') //String
-    //let numero2 = window.prompt('Valor 2: ') //String
-    //alert('Soma dos valores é: ' + (numero1 + numero2))
-    //var soma = numero1 + numero2
-    //alert('Soma dos valores é: ' + soma)
-    //soma = Number.parseInt(numero1) + Number.parseInt(numero2)
-    //soma = Number(numero1) + Number(numero2)
-    //alert('Soma: ' + soma)
-    //soma = String(numero1) + String(numero2)
-    //alert('Soma em string: ' + soma)
-    //alert(`A soma entre ${numero1} e ${numero2} é: ${soma}`)
-    let nome = window.prompt('Insira seu nome: ')
-    document.write(`Ola ${nome}, seu nome tem ${nome.length} letras`)
-</script>
 
 </html>

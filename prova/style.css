@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+}
+
+.parte {
+    font-size: 20px;
+}
+
+.todo {
+    display: flex;
+    height: 100%;
+}
+
+.cima {
+    background-color: yellow;
+}
+
+.esq {
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.itens {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes {
+    display: flex;
+}
+
+button {
+    font-size: 30px;
+}
+
+.dir {
+    background-color: greenyellow;
+    flex-grow: 3;
+}
